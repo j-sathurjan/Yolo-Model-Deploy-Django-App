@@ -50,11 +50,11 @@ class UploadImage(CreateView):
                 "form": form,
                 "inference_img": inference_img
             }
-            return render(request, 'image/imagemodel_form.html', context)
+            return render(request, 'imagemodel_form.html', context)
 
         else:
             form = ImageUploadForm()
         context = {
             "form": form
         }
-        return render(request, 'image/imagemodel_form.html', context)
+        return render(request, 'imagemodel_form.html', context)
